@@ -1,4 +1,4 @@
-import AboutSection from "../components/Home/AboutSection";
+import AboutSection from "../components/home/AboutSection";
 import AppDownloadSection from "../components/home/AppDownloadSection";
 import Banner from "../components/home/Banner";
 import CounterSection from "../components/home/CounterSection";
@@ -9,7 +9,7 @@ import Partner from "../components/home/Partner";
 import PopularClasses from "../components/home/PopularClasses";
 import StaffSection from "../components/home/StaffSection";
 import TestimonialSection from "../components/home/TestimonialSection";
-import WelcomeSection from "../components/Home/WelcomeSection";
+import WelcomeSection from "../components/home/WelcomeSection";
 // import WelcomeSection from "../components/home/WelcomeSection";
 // import AboutSection from "../components/home/AboutSection";
 

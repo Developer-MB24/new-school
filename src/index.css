@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes hero-border {
+  0% {
+    border-radius: 51% 49% 77% 23% / 65% 50% 50% 35%;
+  }
+  100% {
+    border-radius: 30% 70% 28% 72% / 53% 69% 31% 47%;
+  }
+}
+
+.hero-blob {
+  animation: hero-border 5s linear infinite alternate;
+}
+
+@keyframes partner-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-partner-scroll {
+  animation: partner-scroll 25s linear infinite;
+}

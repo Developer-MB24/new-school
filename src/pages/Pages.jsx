@@ -1,0 +1,1 @@
+export default function Pages(){return <h1 className='text-3xl p-10'>Pages Page</h1>}

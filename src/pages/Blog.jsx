@@ -1,3 +1,11 @@
+import BlogHero from "../components/blog/BlogHero";
+import Blogmain from "../components/blog/Blogmain";
+
 export default function Blog() {
-  return <h1 className="text-3xl p-10">Blog Page</h1>;
+  return (
+    <>
+      <BlogHero />
+      <Blogmain />
+    </>
+  );
 }

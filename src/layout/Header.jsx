@@ -61,8 +61,8 @@ export default function Header() {
             <Link to="/" className="hover:text-green-500">
               Home
             </Link>
-            <Link to="/courses" className="hover:text-green-500">
-              Courses
+            <Link to="/about" className="hover:text-green-500">
+              About
             </Link>
             <Link to="/about" className="hover:text-green-500">
               Pages
@@ -104,8 +104,8 @@ export default function Header() {
               <Link onClick={() => setOpen(false)} to="/">
                 Home
               </Link>
-              <Link onClick={() => setOpen(false)} to="/courses">
-                Courses
+              <Link onClick={() => setOpen(false)} to="/about">
+                About
               </Link>
               <Link onClick={() => setOpen(false)} to="/about">
                 Pages

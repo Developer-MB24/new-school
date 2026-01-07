@@ -1,1 +1,12 @@
-export default function Contact(){return <h1 className='text-3xl p-10'>Contact Page</h1>}
+import ContactFormSection from "../components/contact/ContactPage";
+import ContactHero from "../components/contact/ContactHero";
+import ContactPage from "../components/contact/ContactPage";
+
+export default function Contact() {
+  return (
+    <>
+      <ContactHero />
+      <ContactPage />
+    </>
+  );
+}

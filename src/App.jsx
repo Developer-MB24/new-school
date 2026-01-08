@@ -5,6 +5,7 @@ import About from "./pages/About";
 import Pages from "./pages/Pages";
 import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
+import BlogDetails from "./pages/BlogDetails";
 export default function App() {
   return (
     <BrowserRouter>
@@ -14,6 +15,7 @@ export default function App() {
           <Route path="/about" element={<About />} />
           <Route path="/pages" element={<Pages />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/blog-details" element={<BlogDetails />} />
           <Route path="/contact" element={<Contact />} />
         </Route>
       </Routes>

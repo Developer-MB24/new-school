@@ -1,7 +1,7 @@
 import React from "react";
 import { FaAngleRight } from "react-icons/fa";
 
-export default function ContactHero() {
+export default function BlogDetailsHero() {
   return (
     <div
       className="elementor-element elementor-element-ed9e4d7 e-con-full e-flex e-con e-parent"
@@ -16,19 +16,19 @@ export default function ContactHero() {
       <div className="elementor-element elementor-element-7fcd6c2 e-flex e-con-boxed e-con e-child">
         <div className="e-con-inner">
           {/* Title */}
-          <div className="elementor-element elementor-element-8f4d59b ml-10 elementor-widget elementor-widget-tp_page_title">
-            <div className="elementor-widget-container">
-              <h2 className="cb-page-title text-white text-4xl font-bold uppercase">
-                contact
+          <div className="elementor-element elementor-element-8f4d59b elementor-widget elementor-widget-tp_page_title">
+            <div className="elementor-widget-container ml-5">
+              <h2 className="cb-page-title text-white text-6xl font-bold uppercase">
+                Funny lessons for kids
               </h2>
             </div>
           </div>
 
           {/* Breadcrumb */}
-          <div className="elementor-element elementor-element-5600d3d ml-10 elementor-widget elementor-widget-tp-addons-breadcrumb">
+          <div className="elementor-element elementor-element-5600d3d elementor-widget elementor-widget-tp-addons-breadcrumb">
             <div className="elementor-widget-container">
-              <ul className="cb-addons-breadcrumbs flex items-center gap-2 text-white text-sm">
-                <li className="cb-addons-breadcrumbs-item cb-addons-breadcrumbs-start">
+              <ul className="cb-addons-breadcrumbs flex items-center gap-2 ml-5 text-white text-4xl">
+                <li className="cb-addons-breadcrumbs-item text-lg cb-addons-breadcrumbs-start">
                   <a href="/" rel="home">
                     <span className="cb-addons-breadcrumbs-text">Home</span>
                   </a>
@@ -40,8 +40,20 @@ export default function ContactHero() {
                   </span>
                 </li>
 
-                <li className="cb-addons-breadcrumbs-item cb-addons-breadcrumbs-end">
-                  <span className="cb-addons-breadcrumbs-text">contact</span>
+                <li className="cb-addons-breadcrumbs-item text-lg cb-addons-breadcrumbs-end">
+                  <span className="cb-addons-breadcrumbs-text">
+                    Uncategorized
+                  </span>
+                </li>
+                <li className="cb-addons-breadcrumbs-separator">
+                  <span className="cb-addons-breadcrumbs-separator-icon">
+                    <FaAngleRight size={12} />
+                  </span>
+                </li>
+                <li className="cb-addons-breadcrumbs-item text-lg cb-addons-breadcrumbs-end">
+                  <span className="cb-addons-breadcrumbs-text">
+                    Funny lessons for kids
+                  </span>
                 </li>
               </ul>
             </div>

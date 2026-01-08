@@ -16,7 +16,7 @@ export default function AboutHero() {
       <div className="elementor-element elementor-element-7fcd6c2 e-flex e-con-boxed e-con e-child">
         <div className="e-con-inner">
           {/* Title */}
-          <div className="elementor-element elementor-element-8f4d59b elementor-widget elementor-widget-tp_page_title">
+          <div className="elementor-element elementor-element-8f4d59b ml-10 elementor-widget elementor-widget-tp_page_title">
             <div className="elementor-widget-container">
               <h2 className="cb-page-title text-white text-4xl font-bold uppercase">
                 About
@@ -25,7 +25,7 @@ export default function AboutHero() {
           </div>
 
           {/* Breadcrumb */}
-          <div className="elementor-element elementor-element-5600d3d elementor-widget elementor-widget-tp-addons-breadcrumb">
+          <div className="elementor-element elementor-element-5600d3d ml-10 elementor-widget elementor-widget-tp-addons-breadcrumb">
             <div className="elementor-widget-container">
               <ul className="cb-addons-breadcrumbs flex items-center gap-2 text-white text-sm">
                 <li className="cb-addons-breadcrumbs-item cb-addons-breadcrumbs-start">

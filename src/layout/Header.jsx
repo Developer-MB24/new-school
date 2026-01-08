@@ -12,10 +12,12 @@ import {
   FaBars,
   FaTimes,
   FaShoppingCart,
+  FaChevronDown,
 } from "react-icons/fa";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
+  const [blogOpen, setBlogOpen] = useState(false);
 
   return (
     <header className="w-full shadow-sm">
@@ -45,7 +47,7 @@ export default function Header() {
       </div>
 
       {/* Main Header */}
-      <div className="bg-white">
+      <div className="bg-white relative">
         <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
           {/* Logo */}
           <Link to="/" className="flex items-center">
@@ -57,7 +59,7 @@ export default function Header() {
           </Link>
 
           {/* Desktop Menu */}
-          <nav className="hidden lg:flex gap-8 font-medium">
+          <nav className="hidden lg:flex gap-8 font-medium items-center">
             <Link to="/" className="hover:text-green-500">
               Home
             </Link>
@@ -67,9 +69,35 @@ export default function Header() {
             <Link to="/about" className="hover:text-green-500">
               Pages
             </Link>
-            <Link to="/blog" className="hover:text-green-500">
-              Blog
-            </Link>
+
+            {/* Blog Dropdown */}
+            <div
+              className="relative group cursor-pointer"
+              onMouseEnter={() => setBlogOpen(true)}
+              onMouseLeave={() => setBlogOpen(false)}
+            >
+              <div className="flex items-center gap-1 hover:text-green-500">
+                Blog <FaChevronDown className="text-xs" />
+              </div>
+
+              {blogOpen && (
+                <div className="absolute top-full left-0 mt-2 bg-white shadow-lg border rounded w-40 z-50">
+                  <Link
+                    to="/blog"
+                    className="block px-4 py-2 hover:bg-green-50"
+                  >
+                    Blog
+                  </Link>
+                  <Link
+                    to="/blog-details"
+                    className="block px-4 py-2 hover:bg-green-50"
+                  >
+                    Blog Details
+                  </Link>
+                </div>
+              )}
+            </div>
+
             <Link to="/contact" className="hover:text-green-500">
               Contact
             </Link>
@@ -110,9 +138,27 @@ export default function Header() {
               <Link onClick={() => setOpen(false)} to="/about">
                 Pages
               </Link>
-              <Link onClick={() => setOpen(false)} to="/blog">
-                Blog
-              </Link>
+
+              {/* Mobile Blog Dropdown */}
+              <div>
+                <button
+                  onClick={() => setBlogOpen(!blogOpen)}
+                  className="flex items-center justify-between w-full"
+                >
+                  Blog <FaChevronDown />
+                </button>
+                {blogOpen && (
+                  <div className="ml-4 mt-2 flex flex-col gap-2">
+                    <Link onClick={() => setOpen(false)} to="/blog">
+                      Blog
+                    </Link>
+                    <Link onClick={() => setOpen(false)} to="/blog-details">
+                      Blog Details
+                    </Link>
+                  </div>
+                )}
+              </div>
+
               <Link onClick={() => setOpen(false)} to="/contact">
                 Contact
               </Link>

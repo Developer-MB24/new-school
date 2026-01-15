@@ -67,7 +67,7 @@ export default function ColorsCustomization() {
               icon: FaImages,
               to: "/color-customization",
             },
-            { label: "Admissions", icon: FaClipboardList, to: "/admissions" },
+            { label: "Blog Media", icon: FaClipboardList, to: "/blog-media" },
             { label: "Testimonials", icon: FaQuoteRight, to: "/testimonials" },
             {
               label: "Footer Setting",

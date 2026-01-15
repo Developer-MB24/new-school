@@ -57,8 +57,12 @@ export default function PageManagement() {
               icon: FaUserGraduate,
               to: "/blog-management",
             },
-            { label: "Media", icon: FaImages, to: "/media" },
-            { label: "Admissions", icon: FaClipboardList, to: "/admissions" },
+            {
+              label: "Color Customization",
+              icon: FaImages,
+              to: "/color-customization",
+            },
+            { label: "Blog Media", icon: FaClipboardList, to: "/blog-media" },
             { label: "Testimonials", icon: FaQuoteRight, to: "/testimonials" },
             {
               label: "Footer Setting",
@@ -68,7 +72,7 @@ export default function PageManagement() {
             { label: "Menus", icon: FaBars, to: "/menus" },
             { label: "Site Settings", icon: FaHome, to: "/settings/site" },
             { label: "User Management", icon: FaUserPlus, to: "/users" },
-            { label: "SEO Settings", icon: FaBlog, to: "/settings/seo" },
+            { label: "SEO Settings", icon: FaBlog, to: "/seo-setting" },
           ].map(({ label, icon: Icon, to }, i) => (
             <NavLink
               key={i}

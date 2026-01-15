@@ -20,6 +20,7 @@ import {
 export default function FooterSettings() {
   return (
     <div className="flex min-h-screen bg-gray-100 text-gray-800">
+      {/* Sidebar */}
       <aside className="w-64 min-h-screen bg-gradient-to-b from-[#0f3b37] to-[#1f4f49] text-white flex flex-col">
         {/* Logo */}
         <div className="flex items-center gap-2 px-5 py-4 text-lg font-semibold border-b border-white/10">
@@ -43,8 +44,12 @@ export default function FooterSettings() {
               icon: FaUserGraduate,
               to: "/blog-management",
             },
-            { label: "Media", icon: FaImages, to: "/media" },
-            { label: "Admissions", icon: FaClipboardList, to: "/admissions" },
+            {
+              label: "Color Customization",
+              icon: FaImages,
+              to: "/color-customization",
+            },
+            { label: "Blog Media", icon: FaClipboardList, to: "/blog-media" },
             { label: "Testimonials", icon: FaQuoteRight, to: "/testimonials" },
             {
               label: "Footer Setting",
@@ -54,7 +59,7 @@ export default function FooterSettings() {
             { label: "Menus", icon: FaBars, to: "/menus" },
             { label: "Site Settings", icon: FaHome, to: "/settings/site" },
             { label: "User Management", icon: FaUserPlus, to: "/users" },
-            { label: "SEO Settings", icon: FaBlog, to: "/settings/seo" },
+            { label: "SEO Settings", icon: FaBlog, to: "/seo-setting" },
           ].map(({ label, icon: Icon, to }, i) => (
             <NavLink
               key={i}

@@ -17,7 +17,7 @@ import {
   FaSave,
 } from "react-icons/fa";
 
-export default function Seosetting() {
+export default function Seo() {
   return (
     <div className="flex min-h-screen bg-gray-100 text-gray-800">
       {/* Sidebar */}

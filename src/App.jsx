@@ -15,7 +15,7 @@ import FooterSettings from "./pages/FooterSettings";
 import ColorsCustomization from "./pages/ColorsCustomization";
 
 import BlogMedia from "./pages/BlogMedia";
-import Seosetting from "./pages/SEOSetting";
+import Seo from "./pages/Seo";
 
 export default function App() {
   return (
@@ -34,8 +34,9 @@ export default function App() {
           <Route path="/image-manager" element={<ImageManager />} />
           <Route path="/blog-management" element={<BlogManagement />} />
           <Route path="/footer-setting" element={<FooterSettings />} />
-          <Route path="/seo-setting" element={<Seosetting />} />
+          {/* <Route path="/seo-setting" element={<Seosetting />} /> */}
           <Route path="/blog-media" element={<BlogMedia />} />
+          <Route path="/seo-setting" element={<Seo />} />
 
           <Route
             path="/color-customization"

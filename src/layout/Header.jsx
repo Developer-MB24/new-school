@@ -66,9 +66,6 @@ export default function Header() {
             <Link to="/about" className="hover:text-green-500">
               About
             </Link>
-            <Link to="/about" className="hover:text-green-500">
-              Pages
-            </Link>
 
             {/* Blog Dropdown */}
             <div
@@ -100,6 +97,9 @@ export default function Header() {
 
             <Link to="/contact" className="hover:text-green-500">
               Contact
+            </Link>
+            <Link to="/dashboard" className="hover:text-green-500">
+              Dashboard
             </Link>
           </nav>
 
@@ -135,9 +135,6 @@ export default function Header() {
               <Link onClick={() => setOpen(false)} to="/about">
                 About
               </Link>
-              <Link onClick={() => setOpen(false)} to="/about">
-                Pages
-              </Link>
 
               {/* Mobile Blog Dropdown */}
               <div>
@@ -161,6 +158,9 @@ export default function Header() {
 
               <Link onClick={() => setOpen(false)} to="/contact">
                 Contact
+              </Link>
+              <Link onClick={() => setOpen(false)} to="/contact">
+                Dashboard
               </Link>
 
               <Link to="/cart" className="flex items-center gap-2">

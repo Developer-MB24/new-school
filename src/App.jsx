@@ -13,7 +13,7 @@ import ImageManager from "./pages/ImageManager";
 import BlogManagement from "./pages/BlogManagement";
 import FooterSettings from "./pages/FooterSettings";
 import ColorsCustomization from "./pages/ColorsCustomization";
-import SeoSettings from "./pages/SEOSettings";
+import SEOSettings from "./pages/SEOSettings";
 import BlogMedia from "./pages/BlogMedia";
 
 export default function App() {
@@ -33,7 +33,7 @@ export default function App() {
           <Route path="/image-manager" element={<ImageManager />} />
           <Route path="/blog-management" element={<BlogManagement />} />
           <Route path="/footer-setting" element={<FooterSettings />} />
-          <Route path="/seo-setting" element={<SeoSettings />} />
+          <Route path="/seo-setting" element={<SEOSettings />} />
           <Route path="/blog-media" element={<BlogMedia />} />
 
           <Route

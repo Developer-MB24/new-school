@@ -59,12 +59,27 @@ export default function Header() {
           </Link>
 
           {/* Desktop Menu */}
-          <nav className="hidden lg:flex gap-8 font-medium items-center">
+          <nav className="hidden lg:flex gap-4 font-medium items-center">
             <Link to="/" className="hover:text-green-500">
               Home
             </Link>
             <Link to="/about" className="hover:text-green-500">
               About
+            </Link>
+            <Link to="/admissions" className="hover:text-green-500">
+              Admissions
+            </Link>
+            <Link to="/infrastructure" className="hover:text-green-500">
+              Infrastructure
+            </Link>
+            <Link to="/events" className="hover:text-green-500">
+              Events
+            </Link>
+            <Link to="/mandatory-disclosure" className="hover:text-green-500">
+              Mandatory Disclosure
+            </Link>
+            <Link to="/careers" className="hover:text-green-500">
+              Careers
             </Link>
 
             {/* Blog Dropdown */}
@@ -135,6 +150,21 @@ export default function Header() {
               <Link onClick={() => setOpen(false)} to="/about">
                 About
               </Link>
+              <Link onClick={() => setOpen(false)} to="/admissions">
+                Admissions
+              </Link>
+              <Link onClick={() => setOpen(false)} to="/infrastructure">
+                Infrastructure
+              </Link>
+              <Link onClick={() => setOpen(false)} to="/events">
+                Events
+              </Link>
+              <Link onClick={() => setOpen(false)} to="/mandatory-disclosure">
+                Mandatory Disclosure
+              </Link>
+              <Link onClick={() => setOpen(false)} to="/careers">
+                Careers
+              </Link>
 
               {/* Mobile Blog Dropdown */}
               <div>
@@ -159,7 +189,7 @@ export default function Header() {
               <Link onClick={() => setOpen(false)} to="/contact">
                 Contact
               </Link>
-              <Link onClick={() => setOpen(false)} to="/contact">
+              <Link onClick={() => setOpen(false)} to="/dashboard">
                 Dashboard
               </Link>
 

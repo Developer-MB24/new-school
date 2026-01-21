@@ -16,6 +16,11 @@ import ColorsCustomization from "./pages/ColorsCustomization";
 
 import BlogMedia from "./pages/BlogMedia";
 import Seo from "./pages/Seo";
+import AdmissionEnquiry from "./pages/AdmissionEnquiry";
+import Infrastructure from "./pages/Infrastructure";
+import Events from "./pages/Events";
+import MandatoryDisclosure from "./pages/MandatoryDisclosure";
+import Careers from "./pages/Careers";
 
 export default function App() {
   return (
@@ -37,6 +42,14 @@ export default function App() {
           {/* <Route path="/seo-setting" element={<Seosetting />} /> */}
           <Route path="/blog-media" element={<BlogMedia />} />
           <Route path="/seo-setting" element={<Seo />} />
+          <Route path="/admissions" element={<AdmissionEnquiry />} />
+          <Route path="/infrastructure" element={<Infrastructure />} />
+          <Route path="/events" element={<Events />} />
+          <Route path="/careers" element={<Careers />} />
+          <Route
+            path="/mandatory-disclosure"
+            element={<MandatoryDisclosure />}
+          />
 
           <Route
             path="/color-customization"

@@ -49,12 +49,12 @@ const ContactPage = () => {
           {[
             {
               title: "VISIT OFFICE",
-              value: "New Elefent Road, Dhaka",
+              value: "Myur Vihar, New Delhi",
               icon: "📍",
             },
             {
               title: "CALL ANYTIME",
-              value: "+880 123 456 789",
+              value: "+91-12345-67890",
               icon: "📞",
             },
             {

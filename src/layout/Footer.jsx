@@ -37,19 +37,15 @@ export default function Footer() {
           <div>
             <h4 className="text-xl font-semibold mb-5">Information</h4>
             <ul className="space-y-3 text-white/80">
-              {[
-                "My account",
-                "Order History",
-                "Kids Study",
-                "News",
-                "Returns",
-              ].map((item, i) => (
-                <li key={i}>
-                  <a href="#" className="hover:text-white transition">
-                    {item}
-                  </a>
-                </li>
-              ))}
+              {["My account", "Kids Study", "News", "Returns"].map(
+                (item, i) => (
+                  <li key={i}>
+                    <a href="#" className="hover:text-white transition">
+                      {item}
+                    </a>
+                  </li>
+                ),
+              )}
             </ul>
           </div>
 
@@ -79,7 +75,7 @@ export default function Footer() {
 
       {/* Bottom footer */}
       <div className="bg-[#0b2f2b] py-6 text-center text-white/70">
-        <p>© 2025 Kidba Designed by CodeBasket</p>
+        <p>© 2026 Designed by Master bazar</p>
       </div>
     </footer>
   );

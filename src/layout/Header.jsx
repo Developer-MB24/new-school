@@ -37,10 +37,10 @@ export default function Header() {
               <FaClock /> 9:30am - 6:30pm Mon - Sun
             </li>
             <li className="flex items-center gap-2">
-              <FaPhoneAlt /> +800-123-4567 6587
+              <FaPhoneAlt /> +91-12345-67890
             </li>
             <li className="flex items-center gap-2">
-              <FaMapMarkerAlt /> Anmoore Road Brooklyn, NY 230
+              <FaMapMarkerAlt /> Mayur Vihar, New Delhi
             </li>
           </ul>
 
